@@ -1,0 +1,11 @@
+appId: evermos.evermos.com.evermos.stag
+---
+- runFlow: login.yaml
+- tapOn:
+    point: 1240,2680
+- scroll
+- tapOn:
+    text: "Keluar Aplikasi"
+
+
+

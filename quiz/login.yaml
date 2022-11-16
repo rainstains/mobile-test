@@ -5,6 +5,9 @@ env:
 ---
 - launchApp:
     clearState: true
+- extendedWaitUntil:
+    visible: "izinkan"
+    timeout: 20000
 - tapOn: # tap on izinkan
     text: "izinkan"
 - tapOn: # tap on selanjutnya
@@ -23,7 +26,18 @@ env:
 - tapOn: # assert ada yang baru di evermos
     optional: true
     text: "Ada yang baru di Evermos!"
-# tap on ada yang baru di evermos
+- tapOn:
+    text: "Belanja Sekarang"
+    optional: true
+- extendedWaitUntil:
+    visible: "Cari"
+    timeout: 20000
+- tapOn:
+    point: 1240,2680
+    
+# - assertVisible:
+#     text: "Si Eva Dua Tiga"
+#     optional: true
 
 
 
