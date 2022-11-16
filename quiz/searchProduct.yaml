@@ -1,7 +1,4 @@
 appId: evermos.evermos.com.evermos.stag
-env:
-    PHONE: 252500000
-    PASSWORD: 123123123
 ---
 #- runFlow: login.yaml
 - launchApp
@@ -12,6 +9,8 @@ env:
     text: "Cari"
 - inputText: "Kopi"
 - pressKey: Enter
+- assertVisible:
+    text: Bagikan #alternatif expect karna keyword "Kopi" gak ke baca
 
 
   

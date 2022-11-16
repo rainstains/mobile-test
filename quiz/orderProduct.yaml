@@ -1,0 +1,46 @@
+appId: evermos.evermos.com.evermos.stag
+---
+- runFlow: searchProduct.yaml
+- tapOn:
+    point: 400,720
+- tapOn:
+    text: "Pesan Sekarang"
+- tapOn:
+    text: "Masukkan ke Keranjang"
+- tapOn:
+    text: "Lanjutkan"
+- extendedWaitUntil:
+    visible: "Checkout"
+    timeout: 20000
+- tapOn:
+    text: "Lanjut ke Checkout"
+- extendedWaitUntil:
+    visible: "Checkout"
+    timeout: 20000
+- tapOn:
+    text: "Lanjutkan ke Pembayaran"
+- tapOn:
+    text: "Bayar"
+- extendedWaitUntil:
+    visible: "Pilih Metode Pembayaran"
+    timeout: 20000
+- tapOn:
+    text: "Danamon Online"
+- extendedWaitUntil:
+    visible: "Danamon Online Banking"
+    timeout: 20000
+- tapOn:
+    text: "Pay now"
+- extendedWaitUntil:
+    visible: "Detail Transaksi"
+    timeout: 20000
+- tapOn:
+    text: "Pay"
+- extendedWaitUntil:
+    visible: "Payment Success"
+    timeout: 20000
+- tapOn:
+    text: "Back to merchant website"
+- tapOn:
+    text: "Lihat Daftar Pesanan"
+- pressKey: Back
