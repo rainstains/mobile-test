@@ -1,0 +1,5 @@
+appId: evermos.evermos.com.evermos.stag
+---
+- launchApp
+    # clearState: true
+# - tapOn: "SKIP"
