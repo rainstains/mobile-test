@@ -23,9 +23,6 @@ env:
 - hideKeyboard # hide keyboard
 - tapOn: # tap on masuk
     text: "Masuk"
-- tapOn: # assert ada yang baru di evermos
-    optional: true
-    text: "Ada yang baru di Evermos!"
 - tapOn:
     text: "Belanja Sekarang"
     optional: true

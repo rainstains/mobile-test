@@ -1,0 +1,24 @@
+appId: evermos.evermos.com.evermos.stag
+env:
+    PHONE: 252500000
+    PASSWORD: 123123123
+---
+#- runFlow: login.yaml
+- launchApp
+- tapOn:
+    text: "Belanja Sekarang"
+    optional: true
+- tapOn:
+    text: "Cari"
+- inputText: "Kopi"
+- pressKey: Enter
+
+
+  
+  
+  
+  
+  
+  
+
+
