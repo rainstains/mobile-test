@@ -1,5 +1,32 @@
 appId: evermos.evermos.com.evermos.stag
+env:
+    PHONE: 252500000
+    PASSWORD: 123123123
 ---
-- launchApp
-    # clearState: true
-# - tapOn: "SKIP"
+- launchApp:
+    clearState: true
+- tapOn: # tap on izinkan
+    text: "izinkan"
+- tapOn: # tap on selanjutnya
+    text: "selanjutnya"
+- tapOn: # tap on masuk dengan kata sandi
+    text: "masuk dengan kata sandi"
+- tapOn: # tap on contoh
+    text: "Contoh: 87722200714"
+- inputText: ${PHONE} # inputtext 
+- tapOn: # tap on ketik kata sandi
+    text: "ketik kata sandi"
+- inputText: ${PASSWORD} # inputtext
+- hideKeyboard # hide keyboard
+- tapOn: # tap on masuk
+    text: "Masuk"
+- tapOn: # assert ada yang baru di evermos
+    optional: true
+    text: "Ada yang baru di Evermos!"
+# tap on ada yang baru di evermos
+
+
+
+
+#- stopApp
+
