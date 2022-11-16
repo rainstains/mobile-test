@@ -46,6 +46,6 @@ appId: evermos.evermos.com.evermos.stag
     text: "Back to merchant website"
 - assertVisible:
     text: "Alhamdulillah, Pembayaran Berhasil!"
-# - tapOn:
-#     text: "Lihat Daftar Pesanan"
-# - pressKey: Back
+- tapOn:
+    text: "Lihat Daftar Pesanan"
+- pressKey: Back
