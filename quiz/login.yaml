@@ -8,20 +8,20 @@ env:
 - extendedWaitUntil:
     visible: "izinkan"
     timeout: 20000
-- tapOn: # tap on izinkan
+- tapOn: 
     text: "izinkan"
-- tapOn: # tap on selanjutnya
+- tapOn: 
     text: "selanjutnya"
-- tapOn: # tap on masuk dengan kata sandi
+- tapOn: 
     text: "masuk dengan kata sandi"
-- tapOn: # tap on contoh
+- tapOn:
     text: "Contoh: 87722200714"
-- inputText: ${PHONE} # inputtext 
-- tapOn: # tap on ketik kata sandi
+- inputText: ${PHONE}
+- tapOn: 
     text: "ketik kata sandi"
-- inputText: ${PASSWORD} # inputtext
-- hideKeyboard # hide keyboard
-- tapOn: # tap on masuk
+- inputText: ${PASSWORD} 
+- hideKeyboard
+- tapOn:
     text: "Masuk"
 - tapOn:
     text: "Belanja Sekarang"
@@ -29,15 +29,13 @@ env:
 - extendedWaitUntil:
     visible: "Cari"
     timeout: 20000
-- tapOn:
-    point: 1240,2680
-    
+- assertVisible:
+    text: "Daftar Produk"
+# Buat Assert Nomor HP tapi Nomor HP tidak terbaca
+# - tapOn:
+#     point: 1240,2680
+# - tapOn:
+#     text: "Ubah Profil"  
 # - assertVisible:
-#     text: "Si Eva Dua Tiga"
-#     optional: true
-
-
-
-
-#- stopApp
-
+#     below: "Nomor Hp"
+#     text: "62${PHONE}"

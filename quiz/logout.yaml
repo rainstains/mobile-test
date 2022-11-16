@@ -1,11 +1,14 @@
 appId: evermos.evermos.com.evermos.stag
 ---
-- runFlow: login.yaml
+#- runFlow: login.yaml # Buat test case login aja
+- runFlow: orderProduct.yaml # Buat Scenario login -> searchProduct -> orderProduct -> logout
 - tapOn:
     point: 1240,2680
 - scroll
 - tapOn:
     text: "Keluar Aplikasi"
+- assertVisible:
+    text: "Masuk atau Daftar dengan nomor WhatsApp"
 
 
 

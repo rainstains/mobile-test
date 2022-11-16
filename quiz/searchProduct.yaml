@@ -1,8 +1,7 @@
 appId: evermos.evermos.com.evermos.stag
 ---
-#- runFlow: login.yaml
-- launchApp
-- tapOn:
+- runFlow: login.yaml
+- tapOn: # Dijadiin Optional waktu ngetest tanpa clear chace/state
     text: "Belanja Sekarang"
     optional: true
 - tapOn:
@@ -10,8 +9,7 @@ appId: evermos.evermos.com.evermos.stag
 - inputText: "Kopi"
 - pressKey: Enter
 - assertVisible:
-    text: Bagikan #alternatif expect karna keyword "Kopi" gak ke baca
-
+    text: Bagikan #alternatif expect result karna keyword "Kopi"/Nama Product gak ke baca
 
   
   

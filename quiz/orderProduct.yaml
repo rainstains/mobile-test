@@ -10,7 +10,7 @@ appId: evermos.evermos.com.evermos.stag
 - tapOn:
     text: "Lanjutkan"
 - extendedWaitUntil:
-    visible: "Checkout"
+    visible: "Keranjang"
     timeout: 20000
 - tapOn:
     text: "Lanjut ke Checkout"
@@ -19,6 +19,9 @@ appId: evermos.evermos.com.evermos.stag
     timeout: 20000
 - tapOn:
     text: "Lanjutkan ke Pembayaran"
+- extendedWaitUntil:
+    visible: "Bayar"
+    timeout: 20000
 - tapOn:
     text: "Bayar"
 - extendedWaitUntil:
@@ -41,6 +44,8 @@ appId: evermos.evermos.com.evermos.stag
     timeout: 20000
 - tapOn:
     text: "Back to merchant website"
-- tapOn:
-    text: "Lihat Daftar Pesanan"
-- pressKey: Back
+- assertVisible:
+    text: "Alhamdulillah, Pembayaran Berhasil!"
+# - tapOn:
+#     text: "Lihat Daftar Pesanan"
+# - pressKey: Back
