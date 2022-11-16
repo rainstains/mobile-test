@@ -1,0 +1,11 @@
+appId: org.wikipedia
+---
+- launchApp:
+    clearState: true
+- tapOn: "SKIP"
+- tapOn: "Search Wikipedia"
+- inputText: "evermos"
+- tapOn: "Evermore (Taylor Swift album)"
+- tapOn: "got it"
+- assertVisible:
+    text: "2020 studio album by taylor swift"
